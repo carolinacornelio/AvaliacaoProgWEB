@@ -3,6 +3,19 @@ body {
   font-family: Rajdhani, sans-serif;
 }
 
+#coruja, #audima {
+  position: fixed;
+  z-index: 5;
+  width: 60px;
+}
+#coruja {
+  bottom: 15px;
+  left: 15px;
+}
+#audima {
+  bottom: 15px;
+  right: 15px;
+}
 header {
   background-color: #d50000;
   color: #fff;
@@ -145,6 +158,7 @@ header {
 .text-card p {
   margin: 10px 0 0;
   font-size: 14px;
+  color: #fff;
 }
 
 #section2 {
