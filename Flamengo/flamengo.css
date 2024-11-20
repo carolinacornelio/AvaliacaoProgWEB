@@ -107,23 +107,28 @@ header {
   object-fit: cover;
   display: block;
 }
+.card-img:hover, #tudo-esportes img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
 
 .text-card {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  padding: 20px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  right: 0;
+  width: 80%;
+  padding: 15px;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.3));
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   color: #fff;
 }
-
 .text-card h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
-
 .text-card p {
   margin: 10px 0 0;
   font-size: 14px;
@@ -135,7 +140,6 @@ header {
   align-items: center;
   padding: 20px 0;
   width: 100%;
-  /* max-width: 1200px; */
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
@@ -209,4 +213,82 @@ table td {
 .escudo-tabela {
   width: 30px;
   height: auto;
+}
+
+.card-esportes {
+  position: relative;
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.card-esportes img {
+  width: 100%;
+}
+.text-esportes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6); 
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.text-esportes h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.text-esportes p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+  color: white;
+}
+
+#org-esportes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#tudo-esportes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.esportes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.esportes-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.esportes-link {
+  font-size: 14px;
+  color: #d01919;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.esportes-link:hover {
+  color: #aa0000;
+}
+
+#section4 {
+  max-width: 65%;
+  margin: 0 auto;
 }
