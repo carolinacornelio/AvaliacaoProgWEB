@@ -43,6 +43,7 @@ header {
 .buttonshd {
   display: flex;
   gap: 10px;
+  margin-left: -120px;
 }
 .buttonshd .btn {
   background-color: #b10000;
@@ -66,13 +67,16 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
-
 .social-links a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+}
+.social-links img:hover {
+  filter: brightness(0) invert(1);
 }
 
 .navpreta {
@@ -166,17 +170,48 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  width: 100%;
+  width: 97.5%;
   background-color: #e9e6e6;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: 350px;
 }
+ #section2 > div {
+  display: flex;               
+  justify-content: center;    
+  align-items: center; 
+  flex-direction: column;      
+  margin: 10px;                
+} 
+#section2 h3 {
+  color: #000;
+  margin-left: -120px;
+}
+#section2 p {
+  color: #ff0000;
+  margin-top: 15px;
+}
 
 .next-game {
   width: 48%;
   text-align: center;
+}
+#linha-next-game {
+  background-color: #ff0000;
+  width: 3px;
+  height: 25px;
+  z-index: 2;
+  margin-left: -270px;
+  margin-bottom: -20px;
+}
+#linha2-next-game {
+  background-color: #ff0000;
+  width: 3px;
+  height: 25px;
+  z-index: 2;
+  margin-left: -450px;
+  margin-bottom: -20px;
 }
 
 .classification{
@@ -185,6 +220,12 @@ header {
   margin-right: 300px;
 }
 
+.classification .subtitle-bloco {
+  margin-left: -250px;
+}
+.classification h3 {
+  margin-left: -290px !important;
+}
 h3 {
   font-size: 18px;
   color: #ff0000;
@@ -193,9 +234,23 @@ h3 {
 
 .subtitle {
   display: block;
-  font-size: 12px;
-  color: #999;
+  font-size: 14px;
+  color: black;
   margin-bottom: 10px;
+}
+.subtitle-bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    background-color: #d02630;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: -85px;
+    font-weight: bold;
 }
 
 .logos {
@@ -236,6 +291,9 @@ table th, table td {
   color: #ff0000;
   text-decoration: none;
   font-size: 12px;
+}
+.table-completa:hover {
+  text-decoration: underline;
 }
 
 .escudo-tabela {
