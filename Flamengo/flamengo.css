@@ -97,7 +97,13 @@ header {
 
 .menu li {
   margin: 0;
+  /* padding: 0 5px;
+  border-right: 0.1px solid #ffffffaf;
+  white-space: nowrap; */
 }
+/* .navpreta .menu li:last-child {
+  border-right: none;
+} */
 
 .menu a {
   color: #fff;
@@ -140,6 +146,9 @@ header {
   transform: scale(1.1);
   transition: transform 0.5s;
 }
+.card:hover .text-card{
+  background-color: rgba(0, 0, 0, 0.89);
+}
 
 .text-card {
   position: absolute;
@@ -148,7 +157,7 @@ header {
   right: 0;
   width: 70%;
   padding: 15px;
-  background: rgba(0, 0, 0, 0.774);
+  background-color: rgba(0, 0, 0, 0.774);
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   color: #fff;
   justify-self: center;
