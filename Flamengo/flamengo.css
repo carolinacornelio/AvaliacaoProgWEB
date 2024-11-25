@@ -93,6 +93,7 @@ header {
   padding: 0;
   justify-content: center;
   margin-left: 200px;
+  white-space: nowrap;
 }
 
 .menu li {
@@ -104,6 +105,11 @@ header {
 /* .navpreta .menu li:last-child {
   border-right: none;
 } */
+ #borda {
+  border-right: 0.1px solid #ffffff4f;
+  margin-right: -10px;
+  margin-left: -10px;
+ }
 
 .menu a {
   color: #fff;
@@ -196,6 +202,8 @@ header {
 #section2 h3 {
   color: #000;
   margin-left: -120px;
+  border-left: 3px solid red;
+  padding-left: 8px;
 }
 #section2 p {
   color: #ff0000;
@@ -205,22 +213,6 @@ header {
 .next-game {
   width: 48%;
   text-align: center;
-}
-#linha-next-game {
-  background-color: #ff0000;
-  width: 3px;
-  height: 25px;
-  z-index: 2;
-  margin-left: -270px;
-  margin-bottom: -20px;
-}
-#linha2-next-game {
-  background-color: #ff0000;
-  width: 3px;
-  height: 25px;
-  z-index: 2;
-  margin-left: -450px;
-  margin-bottom: -20px;
 }
 
 .classification{
