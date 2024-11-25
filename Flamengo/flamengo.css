@@ -57,6 +57,7 @@ header {
 }
 .buttonshd .btn:hover {
   background-color: #910000;
+  text-decoration: underline;
 }
 
 .icon {
