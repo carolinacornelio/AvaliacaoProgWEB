@@ -1,12 +1,26 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Rajdhani, sans-serif;
 }
 
+#coruja, #audima {
+  position: fixed;
+  z-index: 5;
+  width: 60px;
+}
+#coruja {
+  bottom: 15px;
+  left: 15px;
+}
+#audima {
+  bottom: 15px;
+  right: 15px;
+}
 header {
   background-color: #d50000;
   color: #fff;
   padding: 10px 0;
+  height: 114px;
 }
 
 .container {
@@ -19,25 +33,31 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 200px; 
+  z-index: 2; 
+  width: 120px;
 }
 
 .buttonshd {
   display: flex;
   gap: 10px;
+  margin-left: -120px;
 }
 .buttonshd .btn {
   background-color: #b10000;
   color: #fff;
   text-decoration: none;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 .buttonshd .btn:hover {
   background-color: #910000;
+  text-decoration: underline;
 }
 
 .icon {
@@ -48,18 +68,22 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
-
 .social-links a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
+.social-links img:hover {
+  filter: brightness(0) invert(1);
+}
 
 .navpreta {
   background-color: #000;
   padding: 10px 0;
+  margin-top: 18px;
 }
 
 .menu {
@@ -69,11 +93,24 @@ header {
   margin: 0;
   padding: 0;
   justify-content: center;
+  margin-left: 200px;
+  white-space: nowrap;
 }
 
 .menu li {
   margin: 0;
+  /* padding: 0 5px;
+  border-right: 0.1px solid #ffffffaf;
+  white-space: nowrap; */
 }
+/* .navpreta .menu li:last-child {
+  border-right: none;
+} */
+ #borda {
+  border-right: 0.1px solid #ffffff4f;
+  margin-right: -10px;
+  margin-left: -10px;
+ }
 
 .menu a {
   color: #fff;
@@ -88,6 +125,12 @@ header {
   color: #d50000;
 }
 
+.buttonshd, .buttonshd {
+  z-index: 1;
+  position: relative;
+  margin-top: 25px;
+}
+
 #section1 {
   display: flex;
   justify-content: center;
@@ -98,7 +141,6 @@ header {
   width: 100%;
   height: 500px;
   overflow: hidden;
-  border-radius: 8px;
 }
 
 .card-img {
@@ -107,26 +149,36 @@ header {
   object-fit: cover;
   display: block;
 }
+.card-img:hover, #tudo-esportes img:hover, #div1-section4 img:hover, #fotos .foto:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.card:hover .text-card{
+  background-color: rgba(0, 0, 0, 0.89);
+}
 
 .text-card {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  padding: 20px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  right: 0;
+  width: 70%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.774);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   color: #fff;
+  justify-self: center;
 }
-
 .text-card h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
-
 .text-card p {
   margin: 10px 0 0;
   font-size: 14px;
+  color: #fff;
 }
 
 #section2 {
@@ -134,12 +186,29 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  width: 100%;
-  /* max-width: 1200px; */
-  background-color: #f9f9f9;
+  width: 97.5%;
+  background-color: #e9e6e6;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 350px;
+}
+ #section2 > div {
+  display: flex;               
+  justify-content: center;    
+  align-items: center; 
+  flex-direction: column;      
+  margin: 10px;                
+} 
+#section2 h3 {
+  color: #000;
+  margin-left: -120px;
+  border-left: 3px solid red;
+  padding-left: 8px;
+}
+#section2 p {
+  color: #ff0000;
+  margin-top: 15px;
 }
 
 .next-game {
@@ -153,6 +222,12 @@ header {
   margin-right: 300px;
 }
 
+.classification .subtitle-bloco {
+  margin-left: -250px;
+}
+.classification h3 {
+  margin-left: -290px !important;
+}
 h3 {
   font-size: 18px;
   color: #ff0000;
@@ -161,9 +236,23 @@ h3 {
 
 .subtitle {
   display: block;
-  font-size: 12px;
-  color: #999;
+  font-size: 14px;
+  color: black;
   margin-bottom: 10px;
+}
+.subtitle-bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    background-color: #d02630;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: -85px;
+    font-weight: bold;
 }
 
 .logos {
@@ -185,17 +274,17 @@ p {
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0;
+  width: 75%;
+  margin: 0 auto;
 }
 
-table th,
-table td {
-  padding: 10px;
+.bold {
+  font-weight: bold;
+}
+
+table th, table td {
   font-size: 14px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
 }
 
 .table-completa {
@@ -205,8 +294,188 @@ table td {
   text-decoration: none;
   font-size: 12px;
 }
+.table-completa:hover {
+  text-decoration: underline;
+}
 
 .escudo-tabela {
   width: 30px;
   height: auto;
+}
+
+.card-esportes {
+  position: relative;
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.card-esportes img {
+  width: 100%;
+}
+.text-esportes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6); 
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.text-esportes h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.text-esportes p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+  color: white;
+}
+
+#org-esportes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#tudo-esportes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.esportes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.esportes-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.esportes-link {
+  font-size: 14px;
+  color: #d01919;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.esportes-link:hover {
+  color: #aa0000;
+}
+
+#section4, #section5 {
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+#footer1 {
+  display: flex;
+  justify-content: space-around;
+  background-color: #d1040a; 
+  color: #fff;
+  padding: 20px 0;
+  height: 150px;
+}
+.footer-endereco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+.footer-endereco h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer-endereco p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+#footer2 {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  height: 900px;
+}
+#footer2 h2 {
+  color: red;
+}
+.patrocinadores img, .parceiros img {
+  margin: 15px;
+}
+
+ #tudo-section4 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+#div1-section4{
+  margin-top: 10px;
+}
+
+#div1-section4 p{
+  margin-top: -15px;
+}
+
+#div2-section4 img{
+  width: 200px;
+  height: 100px; 
+  align-self: center;
+}
+
+.org-section4 {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  margin-top: -20px;
+}
+.org-section4 h2 {
+  text-transform: uppercase;
+}
+
+.org-section4 img {
+  max-width: 150px; 
+  height: auto;
+}
+
+#text-section4 p, #fotos p{
+  font-size: 12px;
+  margin-top: -15px;
+}
+
+#fotos {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.red{
+  color: red;
+  margin-top: 10px !important;
+}
+
+.foto h2 {
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+#section6 {
+  text-align: center;
 }
