@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-color: #242526;
   color: white;
@@ -392,15 +396,17 @@ pre {
 .title {
   color: #333;
   flex: 1;
-  font-size: 10px;
-  /* text-align: left; */
+  font-size: 14px !important;
+  text-align: left !important;
+  font-weight: bold;
 }
 
 .duracao {
-  font-size: 0.9rem;
+  font-size: 14px !important;
   color: #555;
   margin-left: 10px;
   white-space: nowrap;
+  margin-top: -5px;
 }
 
 #texto p,
@@ -447,6 +453,7 @@ pre {
   justify-content: center;
   align-items: center;
   gap: 100px;
+  margin-top: -50px;
 }
 
 footer {
