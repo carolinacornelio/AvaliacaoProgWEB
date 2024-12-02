@@ -12,8 +12,8 @@ header {
   justify-content: space-around;
   align-items: center;
   white-space: nowrap;
-  /* position: fixed; */
-  /* z-index: 10; */
+  position: fixed;
+  z-index: 10;
   top: 0;
 }
 
@@ -75,7 +75,7 @@ header {
 #seguir {
   position: relative;
   left: 1250px;
-  top: 10px;
+  top: 75px;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -111,17 +111,20 @@ header {
   gap: 100px;
 }
 
-#comeco, #comeco2 {
+#comeco,
+#final {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
-#comeco img, #comeco2 img {
+#comeco img,
+#final img {
   width: 25%;
 }
-#comeco h1, #comeco2 h1 {
+#comeco h1,
+#final h1 {
   font-size: 40px;
 }
 #comeco p {
@@ -129,7 +132,8 @@ header {
   text-align: center;
   color: #404756;
 }
-#comeco button, #comeco2 button {
+#comeco button,
+#final button {
   background-color: #357da1;
   color: white;
   border: none;
@@ -140,7 +144,8 @@ header {
   position: relative;
   top: 20px;
 }
-#comeco button:hover, #comeco2 button:hover {
+#comeco button:hover,
+#final button:hover {
   background-color: rgb(201, 198, 198);
 }
 #comeco #button2 {
@@ -398,7 +403,8 @@ pre {
   white-space: nowrap;
 }
 
-#texto p, #patrocinadores p {
+#texto p,
+#patrocinadores p {
   text-align: left;
   font-size: 14px;
 }
@@ -420,7 +426,7 @@ pre {
   position: relative;
   margin-left: 20px;
 }
-#patrocinadores-img{
+#patrocinadores-img {
   width: 620px;
   position: relative;
   margin-left: -120px;
@@ -465,6 +471,7 @@ footer {
   color: #b0b3b8;
   margin-bottom: 15px;
   text-transform: uppercase;
+  margin-left: 40px;
 }
 
 .coluna ul {
